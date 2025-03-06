@@ -75,10 +75,11 @@ Run the Supervisor Exporter with:
 ./supervisord_exporter   -supervisord-url="http://admin:admin@xx.xx.xx.xx:9002/RPC2"   -web.listen-address=":9876"   -web.telemetry-path="/metrics"
 
 ```
-# By default, the exporter listens on **port 9876** and fetches data from [**http://localhost:9001/RPC2**](http://localhost:9001/RPC2).
-# but here we have used port 9002.
+### By default, the exporter listens on **port 9876** and fetches data from [**http://localhost:9001/RPC2**](http://localhost:9001/RPC2).
+## but here we have used port 9002.
 
-### Docker Compose Configuration on the host where Prometheus, Grafana, and Alertmanager will be running.
+
+## Docker Compose Configuration on the host where Prometheus, Grafana, and Alertmanager will be running.
 Create a `docker-compose.yml` file with the following content:
 ```bash
 version: '3.8'
