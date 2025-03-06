@@ -60,11 +60,25 @@ curl http://<HOST_IP>:9002/RPC2
 
 ## Installation
 
+### First, check if Go is installed:
+```sh
+go version
+```
+
+
+### If it's not installed, install it using:
+```sh
+sudo apt update
+sudo apt install -y golang
+```
+
 ### Clone the Repository
 
 ```sh
 git clone https://github.com/salimd/supervisord_exporter.git
+cd supervisord_exporter
 go build -o supervisord_exporter supervisord_exporter.go
+ls -l supervisord_exporter
 ```
 
 ## Usage
