@@ -72,7 +72,7 @@ go build -o supervisord_exporter supervisord_exporter.go
 Run the Supervisor Exporter with:
 
 ```sh
-./supervisord_exporter   -supervisord-url="http://admin:admin@xx.xx.xx.xx:9002/RPC2"   -web.listen-address=":9876"   -web.telemetry-path="/metrics"
+./supervisord_exporter -supervisord-url="http://admin:admin@xx.xx.xx.xx:9002/RPC2" -web.listen-address=":9876" -web.telemetry-path="/metrics"
 
 ```
 ### By default, the exporter listens on **port 9876** and fetches data from [**http://localhost:9001/RPC2**](http://localhost:9001/RPC2).
