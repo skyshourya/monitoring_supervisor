@@ -89,6 +89,11 @@ Run the Supervisor Exporter with:
 ./supervisord_exporter -supervisord-url="http://admin:admin@xx.xx.xx.xx:9002/RPC2" -web.listen-address=":9876" -web.telemetry-path="/metrics"
 
 ```
+                                                    OR                                                 
+```sh
+./supervisord_exporter --supervisord-url "http://admin:admin@127.0.0.1:9002/RPC2"
+```
+
 ### By default, the exporter listens on **port 9876** and fetches data from [**http://localhost:9001/RPC2**](http://localhost:9001/RPC2).
 ## but here we have used port 9002.
 
